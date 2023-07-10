@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JACK DANIEL'S</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caladea:ital,wght@1,700&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caladea:ital,wght@1,700&family=Calistoga&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&family=Playfair+Display:wght@600&family=Ysabeau+SC&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&family=Playfair+Display:wght@600&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Pattaya&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Playfair+Display:wght@800&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Yatra+One&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Yatra+One&display=swap"
+        rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Merriweather:wght@700&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Noto+Serif+KR&family=Oswald&family=Special+Elite&family=Yatra+One&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+
+</head>
+<body>
+    
+    <header>
+        <div class="content" id="top">
+            <nav>
+                <ul>
+                    <li><a href="product.html">Our&nbsp;Product&nbsp;&nbsp;<i class="fa-solid fa-sort-down"></i></a></li>
+        
+                    <li><a href="sub.html#top">Recipes&nbsp;&nbsp;<i class="fa-solid fa-sort-down"></i></a></li>
+                </ul>
+            </nav>
+        
+            <nav id="iconimg">
+                <a href="#"><img src="img/main/login2.png" alt="login" id="login"></a>
+                <a href="#"><img src="img/main/icon.png" alt="icon" id="icon"></a>
+            </nav>
+        
+            <div id="logo">
+                <a href="index.html"><img src="img/main/logo_black_textpng.png" alt="logo"></a>
+            </div>
+        
+        
+        </div>
+        </header>
+        
+        
+        
+        <section>
+            <div class="contentbox">
+                <div id="product">
+                    <img src="img/sub/oldno.7.png" alt="no.7" id="old">
+                </div>
+        
+                <div id="explainpro">
+                    <div id="extext">
+                        <h1>OLD NO.7<small>51,000w <span>( 700ml )</span></small></h1>
+                        <p>최고급 곡물, 스프링 할로우 동굴의 깨끗한 물, 사탕단풍나무 숯을 사용해<br>
+                            한 방울 한 방울 부드럽고 풍부한 맛을 담았습니다. <br><br>
+                            잭다니엘 위스키는 수제 화이트 오크통에서 숙성시켜 제조합니다. <br><br>
+                            우리는 150년간 잭 다니엘의 방식대로
+                            눈으로 보고, 향기를 맡고, 맛을 느끼며<br> 위스키를 만들었습니다.</p>
+                    </div>
+                
+                    <div id="add">
+                        <div id="app">
+                            <button v-on:click="countDown" class="count">
+                                <span>-</span>
+                            </button>
+                            <span class="count">&nbsp;&nbsp;&nbsp;{{count}}</span>
+                            <button v-on:click="countUp" class="count"><span>+</span></button>
+                        </div>
+                
+                        <form>
+                            <input type="submit" name="cart" id="cart" value="Add to cart">
+                        </form>
+                    </div>
+                
+                </div>
+        
+                <div id="subex">
+                    <div id="subextext">
+                        <h1>BRING HOME A BOTTLE OF <br>
+                        OLD NO. 7</h1>
+                        
+                        <p>By choosing one of these links, you are leaving JackDaniels.
+                            com and going to a different website. <br>
+                            All content on the retailer website is the responsibility of its owner including,
+                            without limitation, protection of your privacy which is governed by the policy of that website. <br>
+                            We encourage you to review the terms of use, privacy and cookie policies of that website.
+                        </p>
+
+                        <a href="#">Shop all bottles ></a>
+                    
+                        <form>
+                            <p>Enter a Zip code to order online</p>
+                            <input type="search" name="zip" id="zip" placeholder="Zip code">
+                            <input type="submit" name="search" id="search" value="SEARCH">
+                        </form>
+
+                    
+                        <div id="eximg">
+                            <div class="eximgt">
+                                <img src="img/sub/icon3.png" alt="drink" id="drink">
+                                <p>BALANCE OF SWEET AND OAKY FLAVOR</p>
+                            </div>
+                            <div class="eximgt">
+                                <img src="img/sub/icon2.png" alt="charcoal" id="charcoal">
+                                <p>CHARCOAL MELLOWED</p>
+                            </div>
+                            <div class="eximgt">
+                                <img src="img/sub/oak.png" alt="oak" id="oak">
+                                <p>MATURED IN NEW, HANDCRAFTED WHITE OAK BARRELS</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="recipe">
+            <div class="contentbox">
+                <div id="color">
+                    <p>Recipe&nbsp; for&nbsp; Jack Daniel's&nbsp; Tennessee whiskey&nbsp; 
+                        <b>- OLD NO.7 -</b></p>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <article>
+            
+            <div class="contentbox">
+                
+                <table id="card">
+                    <colgroup>
+                        <col style="width: 180px;">
+                        <col style="width: 600px;">
+                        <col style="width: 220px;"> 
+                    </colgroup>
+
+                    <tr>
+                        <th style="height: 140px;">
+                            JACK & COKE</th>
+                            <td class="move">
+                                숯처럼 부드러운 테네시 위스키가<br>
+                                콜라의 달콤한 거품을 처음 만났을 때 미국의 클래식 칵테일이 탄생했습니다. <br>
+                                위스키의 천연 바닐라가 콜라의 묵직한 카라멜과 완벽하게 어우러져 <br>
+                                마치 서로를 위해 만들어진 것 같습니다.
+                            </td>
+                        <td style="height: 140px;"><img src="img/sub/recipeimg.png" alt="recipeimg" id="one"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">
+                            <b class="side">TENNESSEE WHISKEY <br>
+                            JACK DANIEL'S <br>
+                            COCA - COLA</b>
+                            <img src="img/sub/recipeimg2.png" alt="recipeimg" id="two"></td>
+                        <td rowspan="4">
+                            <img src="img/sub/jackcockpng.png" alt="jackcoke" id="jackcoke">
+                            <img src="img/sub/jack&cockpng.png" alt="coke" id="coke"></td>
+                        <th style="height: 30px;" class="ti">INGREDIENTS</th>
+                    </tr>
+                    <tr>
+                        <td style="height: 80px;">
+                            Jack Daniel's Old No.7 <br> Coke
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="height: 30px;" class="ti">Recipe</th>
+                    </tr>
+                    <tr>
+                        <td style="height: 220px;">
+                            1. 하이볼 잔에 3/4 정도<br> 얼음을 채웁니다.<br><br>
+                            2. Old No.7을<br> 얼음 위에 붓습니다.<br><br>
+                            3. 콜라를 얹습니다.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 100px;" class="eng">
+                            <p>Jack Daniel's Tennessee Whiskey and Coca-Cola, 
+                            inspired by the popular Jack & Coke cocktail, 
+                            now available in a ready-to-drink canned cocktail.</p>
+                            <p>The Jack Daniel's Tennessee Whiskey notes 
+                            accentuate the great taste of Coca-Cola, 
+                            creating a perfect balance to deliver an amazing taste experience.</p>
+                            <p>Enjoy the crisp, refreshing, and unmistakable taste of a perfectly mixed 
+                            Jack Daniel's & Coca-Cola, ready to be enjoyed 
+                            on the go, and straight from the cooler.</p>
+                        </td>
+
+                    </tr>
+                </table>
+
+            </div>
+        </article>
+
+
+
+        <div id="rv">
+            <div class="contentbox">
+                <div id="rvp">
+                    <p>Review of Jack Daniel's</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="rvw">
+            <div class="contentbox">
+                <div id="review">
+
+                    <select name="bottle" id="bottle">
+                        <option value="all">전체</option>
+                        <option value="oldno.7">OLD NO.7</option>
+                        <option value="gentleman">GENTLEMAN JACK</option>
+                        <option value="select">SELECT</option>
+                        <option value="honey">HONEY</option>
+                        <option value="fire">FIRE</option>
+                        <option value="rye">RYE</option>
+                        <option value="apple">APPLE</option>
+                    </select>
+        
+                    <div id="review_tablebox">
+        
+                        <table>
+        
+                            <tr>
+                                <th>5</th>
+                                <td><a href="#">병이 예뻐서 인테리어 효과도 있고 좋아요ㅎㅎ</a></td>
+                                <td>이지은</td>
+                                <td>2022.12.25</td>
+                                <td>답변완료</td>
+                            </tr>
+        
+                            <tr>
+                                <th>4</th>
+                                <td><a href="#">작은 병 샀는데 괜찮아서 1L 위스키도 사보려구요!</a></td>
+                                <td>김주은</td>
+                                <td>2022.11.21</td>
+                                <td>답변완료</td>
+                            </tr>
+        
+                            <tr>
+                                <th>3</th>
+                                <td><a href="#">맛있어요~</a></td>
+                                <td>이구름</td>
+                                <td>2022.09.24</td>
+                                <td>답변완료</td>
+                            </tr>
+        
+                            <tr>
+                                <th>2</th>
+                                <td><a href="#">분위기 좋은 날 마시기 좋아요.</a></td>
+                                <td>홍진호</td>
+                                <td>2022.08.01</td>
+                                <td>답변완료</td>
+                            </tr>
+        
+                            <tr>
+                                <th>1</th>
+                                <td><a href="#">하이볼 만들어 먹으면 좋아요!</a></td>
+                                <td>박수연</td>
+                                <td>2022.07.15</td>
+                                <td>답변완료</td>
+                            </tr>
+        
+                        </table>
+
+                        <form>
+                            <textarea name="reviw" id="area" cols="140" rows="15" 
+                            autofocus placeholder=" 리뷰를 작성하세요."></textarea><br>
+                            
+                            <button>리뷰 작성하기</button>
+                            <div class="filebox">
+                                <label for="ex_file">사진 업로드</label>
+                                <input type="file" id="ex_file">
+                            </div>
+                        </form>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+        
+        <footer>
+            <div class="content">
+                <div id="free">
+                    <p>LIVE FREELY. DRINK RESPONSIBLE</p>
+                </div>
+                <div id="linetext">
+                    <p>CONTACT US</p>
+                    <p>FAQS</p>
+                    <p>PRIVACY POLICY</p>
+                    <p>PRESSROOM</p>
+                    <p>NUTRITION</p>
+                </div>
+                <div id="explain">
+                    <P>
+                        JACK DANIEL DISTILLERY, LYNCHBURG, TENNESSEE <br>
+                        JACK, JACK DANIEL'S, OLD NO. 7, GENTLEMAN JACK,
+                        and JD are trademarks of Jack Daniel's Properties,
+                        Inc. © 2023 Jack Daniel's Properties, Inc. <br>
+                        Distilled and Bottled by Jack Daniel Distillery, Lynchburg, Tennessee.
+                        ©2023 Jack Daniel's. All rights reserved. <br>
+                        All other trademarks and trade names are properties of their respective owners. <br>
+                        TO FIND OUT MORE ABOUT RESPONSIBLE CONSUMPTION, VISIT DRINKWISE.ORG.AU
+                        AND OURTHINKINGABOUTDRINKING.COM <br>
+                        Please do not share or forward with anyone under the legal drinking age.
+                    </P>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+            
+        new Vue({
+            el: "#app",
+            data: {
+                count:0
+            },
+
+            methods: {
+                countUp: function() {
+                    this.count++;
+                },
+
+                countDown: function () {
+                    this.count--;
+                }
+            }
+        })
+
+        </script>
+
+</body>
+</html>
