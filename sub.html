@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/sub.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <script src="https://kit.fontawesome.com/0ddafc5ecc.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -66,8 +66,6 @@
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Merriweather:wght@700&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Noto+Serif+KR&family=Oswald&family=Special+Elite&family=Yatra+One&display=swap"
         rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-
 </head>
 <body>
     
@@ -114,11 +112,9 @@
                 
                     <div id="add">
                         <div id="app">
-                            <button v-on:click="countDown" class="count">
-                                <span>-</span>
-                            </button>
-                            <span class="count">&nbsp;&nbsp;&nbsp;{{count}}</span>
-                            <button v-on:click="countUp" class="count"><span>+</span></button>
+                            <button class="count">–</button>
+                            <span class="chCount">0</span>
+                            <button class="count">+</button>
                         </div>
                 
                         <form>
@@ -127,6 +123,21 @@
                     </div>
                 
                 </div>
+
+                <script>
+                    let count = 0;
+                    let chCount = document.getElementsByClassName('chCount')[0];
+                    let minus = document.getElementsByClassName('count')[0];
+                    let plus = document.getElementsByClassName('count')[1];
+
+                    minus.addEventListener('click', function(){
+                        console.log(count)
+                    });
+                    plus.addEventListener('click', function(){
+                        console.log(count)
+                        chCount.innerHTML(1)
+                    })
+                </script>
         
                 <div id="subex">
                     <div id="subextext">
@@ -371,7 +382,7 @@
             </div>
     </footer>
 
-    <script>
+    <!-- <script>
             
         new Vue({
             el: "#app",
@@ -390,7 +401,7 @@
             }
         })
 
-        </script>
+        </script> -->
 
 </body>
 </html>
