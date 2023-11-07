@@ -15,18 +15,16 @@ section #explainpro{ width: 45%; height: 699px; border-color: #666;
 #explainpro #extext h1 small span{ font-size: 10px; }
 #explainpro #extext p{ font-family: 'IBM Plex Sans KR', sans-serif; margin-left: 20px; }
 
-#add{ margin: 130px 150px; }
+#add{display: flex; margin: 130px 150px; }
 
-#app{ border: 1px solid #999; width: 135px; height: 25px; float: left; margin-top: 15px;  }
-/* height:50px */
-#app .count{ float: left; }
+#app{ border: 1px solid #999; width: 170px; height: 55px; display: flex;  }
+#app .count{  cursor: pointer; height: 100%; width: 33%; border: none; background: #f3f0e7;}
 #app .count:first-child{ border-right: 1px solid #999; }
-#app .count:last-child{ float: right; border-left: 1px solid #999; }
-#app button{ width: 45px; height: 23px; border: none; background: #f3f0e7; }
-/* height:48px */
+#app .count:last-child{ border-left: 1px solid #999; }
+#app .chCount{width: 33%; height: 100%; display: flex; justify-content: center; align-items: center;}
 
 #explainpro #cart{ background: #333; color: #fff; width: 150px; height: 55px; 
-    position: absolute; float: right; margin-left: 20px; }
+    margin-left: 20px; }
 #explainpro #cart:hover{ opacity: 0.7; cursor: pointer; }
 
 section #subex{ width: 25%; height: 699px; float: left;  

@@ -78,6 +78,7 @@ header #iconimg img:hover {
     width: 100%;
     height: 785px;
     background-color: #e2d0b8;
+    overflow: hidden;
 }
 
 #protextbox {
@@ -261,7 +262,7 @@ span {
     float: right;
     text-align: center;
     font-size: 30px;
-    margin: 300px 20px;
+    margin: 260px 20px;
 }
 
 #recipesbox select {
@@ -348,6 +349,14 @@ span {
     width: 100%;
     height: 785px;
     background-color: #e2d0b8;
+    position: relative;
+    overflow: hidden;
+}
+#story #t1{
+    /* padding-top: 100px; */
+    position: relative;
+    width: 100%;
+    height: 100px;
 }
 
 #story #t1 p {
@@ -355,28 +364,28 @@ span {
     height: 100%;
     font-family: 'Cormorant', serif;
     font-size: 15pt;
-    padding-top: 100px;
     text-align: center;
+    position: absolute;
 }
 
 #story #t1 p:first-child {
-    margin: 0 0 0 30px;
+    top: 100%; left: 1.5%;
 }
 
 #story #t1 p:nth-child(2) {
-    margin: 0 0 0 520px;
+    top: 100%; left: 30%;
 }
 
 #story #t1 p:nth-child(3) {
-    margin: 0 0 0 320px;
+    top: 100%; left: 49%;
 }
 
 #story #t1 p:nth-child(4) {
-    margin: -75px 0 0 310px;
+    top: 100%; right: 29.2%;
 }
 
 #story #t1 p:last-child {
-    margin: -75px 0 0 470px;
+    top: 100%; right: 3%;
 }
 
 #story #t2 {
@@ -385,20 +394,22 @@ span {
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke: 2px #555;
     width: 100%;
+    height: 200px;
     position: relative;
+    top: 20%;
 }
 
 #story #t2 p:nth-child(1) {
     font-size: 69pt;
-    padding: 250px 0px;
     position: absolute;
+    top: 0%;
     animation: direction 7s infinite alternate linear;
 }
 
 #story #t2 p:nth-child(2) {
     font-size: 50pt;
-    padding: 350px 0px;
     position: absolute;
+    bottom: 0%;
     animation: direction2 7s infinite alternate-reverse linear;
 }
 
@@ -424,25 +435,24 @@ span {
 
 #story #t3 {
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    margin: 160px 510px;
-    width: 400px;
+    position: relative;
+    top: 30%;
+    width: 100%;
+    height: 25%;
     line-height: 30px;
     font-family: 'Ysabeau SC', sans-serif;
 }
 
 #story #ourstory {
     padding: 10px;
-    background-color: #e2d0b8;
+    background-color: transparent;
     border: 2px solid #333;
     border-radius: 10px;
-    margin: 0px 0px;
     font-family: 'Concert One', cursive;
     font-size: 15px;
     position: absolute;
-    bottom: 0;
-    margin: 60px -100px;
+    bottom: 0%;
+    left: 47.5%;
     box-shadow: 1px 1px;
 }
 
@@ -454,27 +464,25 @@ span {
 
 #story #angels {
     position: absolute;
-    margin: -608px -170px;
+    bottom: -13.5%; left: -9%;
 }
 
 #story #th {
     position: absolute;
-    margin: -625px 330px;
+    bottom: -13%; left: 17%;
     width: 490px;
 }
 
 #story #old {
     position: absolute;
-    right: 0;
-    margin: -630px 350px;
+    bottom: -9%; right: 19%;
     width: 410px;
 }
 
 #story #maxwell {
     position: absolute;
-    right: 0;
+    bottom: -12%; right: -10%;
     width: 480px;
-    margin: -590px -200px;
 }
 
 #storyline {
