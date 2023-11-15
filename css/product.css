@@ -11,7 +11,7 @@ aside{ float: left; }
 aside img{ width: 50px; cursor: pointer; }
 aside #click{ margin: 0 0 0 10px; }
 #click p{ border-bottom: 1px solid #333; font-family: 'Libre Baskerville', serif; 
-    margin: 10px 0 5px 0;
+    margin: 10px 0 5px 0; cursor: pointer;
 }
 #click p span{ margin-left: 100px; cursor: pointer; }
 #click .recipe span{ margin-left: 160px; }
