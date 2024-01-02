@@ -1,51 +1,135 @@
 @charset "utf-8";
 
-#wrap{ margin: 0 auto; width: 100%; height: 1100px; background: #f3f0e7;
-    display: flex;
+#wrap {
+  margin: 0 auto;
+  width: 100%;
+  height: 1100px;
+  background: #f3f0e7;
+  display: flex;
 }
 
+aside {
+  float: left;
+}
+aside img {
+  width: 50px;
+  cursor: pointer;
+}
+aside #click {
+  margin: 0 0 0 10px;
+}
+#click p {
+  border-bottom: 1px solid #333;
+  font-family: "Libre Baskerville", serif;
+  margin: 10px 0 5px 0;
+  cursor: pointer;
+}
+#click p span {
+  margin-left: 100px;
+}
+#click .recipe span {
+  margin-left: 160px;
+}
+#click .story span {
+  margin-left: 130px;
+}
+#click .process span {
+  margin-left: 107px;
+}
+#click ul {
+  display: none;
+  font-family: "Ysabeau SC", sans-serif;
+}
+#click .story ~ ul,
+#click .process ~ ul {
+  font-family: "IBM Plex Sans KR", sans-serif;
+}
+#click ul li {
+  line-height: 25px;
+  border-bottom: 1px solid #ccc;
+}
 
-
-
-aside{ float: left; }
-aside img{ width: 50px; cursor: pointer; }
-aside #click{ margin: 0 0 0 10px; }
-#click p{ border-bottom: 1px solid #333; font-family: 'Libre Baskerville', serif; 
-    margin: 10px 0 5px 0; cursor: pointer;
+#box {
+  float: right;
+  width: 80%;
+  height: 1050px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
 }
-#click p span{ margin-left: 100px; }
-#click .recipe span{ margin-left: 160px; }
-#click .story span{ margin-left: 130px; }
-#click .process span{ margin-left: 107px; }
-#click ul{display: none; font-family: 'Ysabeau SC', sans-serif; 
+#box .product {
+  border: 1px solid #333;
+  display: block;
+  width: 22%;
+  height: 300px;
+  box-shadow: 2px 2px 2px #ccc;
 }
-#click .story~ ul, #click .process~ ul{font-family: 'IBM Plex Sans KR', sans-serif;}
-#click ul li{ line-height: 25px; border-bottom: 1px solid #ccc; }
-
-
-#box{ float: right; width: 80%; height: 1050px; display: flex; flex-wrap: wrap; justify-content: space-around; 
-    align-content: space-around;
+#box .product h3 {
+  font-family: "Libre Baskerville", serif;
+  margin: 10px 0 0 10px;
 }
-#box .product{ border: 1px solid #333; width: 22%; height: 300px; 
-    box-shadow: 2px 2px 2px #ccc;
+#box .product h4 {
+  font-family: "Libre Baskerville", serif;
+  margin: 0px 0 0 0px;
 }
-#box .product h3{font-family: 'Libre Baskerville', serif; margin: 10px 0 0 10px;
+#box .single h4 {
+  margin: 5px 0 0 10px;
+  font-size: 14px;
 }
-#box .product h4{font-family: 'Libre Baskerville', serif; margin: 0px 0 0 0px;
+#box .product h5 {
+  font-family: "Libre Baskerville", serif;
+  margin: 10px 0 0 15px;
 }
-#box .single h4{ margin: 5px 0 0 10px; font-size: 14px; }
-#box .product h5{font-family: 'Libre Baskerville', serif; margin: 10px 0 0 15px;
+#box .single h5 {
+  margin: -5px 0 0 10px;
 }
-#box .single h5{ margin: -5px 0 0 10px; }
-#box .product span{ margin-left: 90px; font-size: 20px; color: #97750d; }
-#box .product img{ width: 150px; margin: 15px 0 0 45px; }
-#box .product #gentle{ width: 140px; margin: 30px 0 0 50px;  }
-#box .product #apple{width: 100px; margin: 15px 0 0 70px;}
-#box .product #select{width: 90px; margin: 30px 0 0 75px;}
-#box .product #rye{width: 95px; margin: 30px 0 0 75px;}
-#box .product #proof{width: 130px; margin: 30px 0 0 60px;}
-#box .product #hundred{width: 105px; margin: 30px 0 0 70px;}
-#box .product #proofrye{width: 110px; margin: 30px 0 0 75px;}
-#box .product #tennesseerye{width: 75px; margin: 15px 0 0 85px;}
-#box .product #fire{width: 200px; margin: 15px 0 0 20px;}
-#box .product #bonded{width: 150px; margin: 25px 0 0 40px;}
+#box .product span {
+  margin-left: 90px;
+  font-size: 20px;
+  color: #97750d;
+}
+#box .product img {
+  width: 150px;
+  margin: 15px 0 0 45px;
+}
+#box .product #gentle {
+  width: 140px;
+  margin: 30px 0 0 50px;
+}
+#box .product #apple {
+  width: 100px;
+  margin: 15px 0 0 70px;
+}
+#box .product #select {
+  width: 90px;
+  margin: 30px 0 0 75px;
+}
+#box .product #rye {
+  width: 95px;
+  margin: 30px 0 0 75px;
+}
+#box .product #proof {
+  width: 130px;
+  margin: 30px 0 0 60px;
+}
+#box .product #hundred {
+  width: 105px;
+  margin: 30px 0 0 70px;
+}
+#box .product #proofrye {
+  width: 110px;
+  margin: 30px 0 0 75px;
+}
+#box .product #tennesseerye {
+  width: 75px;
+  margin: 15px 0 0 85px;
+}
+#box .product #fire {
+  width: 200px;
+  margin: 15px 0 0 20px;
+}
+#box .product #bonded {
+  width: 150px;
+  margin: 25px 0 0 40px;
+}

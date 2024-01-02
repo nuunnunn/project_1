@@ -1,266 +1,307 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JACK DANIEL'S</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://kit.fontawesome.com/0ddafc5ecc.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/0ddafc5ecc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caladea:ital,wght@1,700&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
-        rel="stylesheet">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caladea:ital,wght@1,700&family=Calistoga&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
-        rel="stylesheet">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caladea:ital,wght@1,700&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&family=Playfair+Display:wght@600&family=Ysabeau+SC&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caladea:ital,wght@1,700&family=Calistoga&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&family=Playfair+Display:wght@600&family=Yeseva+One&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&family=Playfair+Display:wght@600&family=Ysabeau+SC&display=swap"
+      rel="stylesheet"
+    />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Pattaya&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&family=Playfair+Display:wght@600&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Playfair+Display&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Playfair+Display:wght@800&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Yatra+One&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Playfair+Display:wght@800&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
     <header>
-        <div class="content">
-            <nav>
-                <ul>
-                    <li><a href="product.html">Our&nbsp;Product&nbsp;&nbsp;<i class="fa-solid fa-sort-down"></i></a></li>
+      <div class="content">
+        <nav>
+          <ul>
+            <li>
+              <a href="product.html"
+                >Our&nbsp;Product&nbsp;&nbsp;<i
+                  class="fa-solid fa-sort-down"
+                ></i
+              ></a>
+            </li>
 
-                    <li><a href="sub.html#top">Recipes&nbsp;&nbsp;<i class="fa-solid fa-sort-down"></i></a></li>
-                </ul>
-            </nav>
+            <li>
+              <a href="sub.html#top"
+                >Recipes&nbsp;&nbsp;<i class="fa-solid fa-sort-down"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
 
-            <nav id="iconimg">
-                <a href="#"><img src="img/main/login2.png" alt="login" id="login"></a>
-                <a href="#"><img src="img/main/icon.png" alt="icon" id="icon"></a>
-            </nav>
+        <nav id="iconimg">
+          <a href="#"
+            ><img src="img/main/login2.png" alt="login" id="login"
+          /></a>
+          <a href="#"><img src="img/main/icon.png" alt="icon" id="icon" /></a>
+        </nav>
 
-            <div id="logo">
-                <a href="index.html"><img src="img/main/logo_black_textpng.png" alt="logo"></a>
-            </div>
-
-
+        <div id="logo">
+          <a href="index.html"
+            ><img src="img/main/logo_black_textpng.png" alt="logo"
+          /></a>
         </div>
+      </div>
     </header>
 
-
     <div id="product">
-        <div class="content">
-            <div id="protextbox">
-                <p>◆</p>
-                <p id="protext">MAKE&nbsp;IT <br> COUNT</p>
-                <p>◆</p>
-            </div>
-
-            <input type="button" value="OUR PRODUCTS" name="products" id="ourproducts" onclick=" location.href = 'product.html';">
-
-
-            <img src="img/main/firepng.png" alt="fire" id="fire">
-            <img src="img/main/100proofbannerpng.png" alt="proof" id="proof">
-            <img src="img/main/frank'swaypng.png" alt="frank's way" id="frank">
-            <img src="img/main/honeybannerpng.png" alt="jackhoney" id="jackhoney">
-            <img src="img/main/no.7bannerpng.png" alt="nom.7&glass" id="glass">
-            <img src="img/main/tennesseeryepng.png" alt="rye" id="rye">
-
+      <div class="content">
+        <div id="protextbox">
+          <p>◆</p>
+          <p id="protext">
+            MAKE&nbsp;IT <br />
+            COUNT
+          </p>
+          <p>◆</p>
         </div>
 
-    </div>
+        <input
+          type="button"
+          value="OUR PRODUCTS"
+          name="products"
+          id="ourproducts"
+          onclick=" location.href = 'product.html';"
+        />
 
+        <img src="img/main/firepng.png" alt="fire" id="fire" />
+        <img src="img/main/100proofbannerpng.png" alt="proof" id="proof" />
+        <img src="img/main/frank'swaypng.png" alt="frank's way" id="frank" />
+        <img src="img/main/honeybannerpng.png" alt="jackhoney" id="jackhoney" />
+        <img src="img/main/no.7bannerpng.png" alt="nom.7&glass" id="glass" />
+        <img src="img/main/tennesseeryepng.png" alt="rye" id="rye" />
+      </div>
+    </div>
 
     <div id="recipes">
-        <div class="content">
-
-            <div id="recipesbox">
-                <p>◆</p>
-                <div id="lineout">
-                    <div id="reline">
-                        <span>I've got a bottle of</span>
-                        <select name="bottle" id="bottle">
-                            <option value="any">Any</option>
-                            <option value="OLDNO.7">OLD NO.7</option>
-                            <optgroup label="SINGLE BARREL">
-                                <option value="select">SELECT</option>
-                                <option value="select">RYE</option>
-                                <option value="select">PROOF</option>
-                                <option value="select">100 PROOF</option>
-                                <option value="select">PROOF RYE</option>
-                            </optgroup>
-                            <option value="gentleman">GENTLEMAN JACK</option>
-                            <option value="bonded">BONDED</option>
-                            <option value="tennesseehoney">TENNESSEE HONEY</option>
-                            <option value="tennesseefire">TENNESSEE FIRE</option>
-                            <option value="tennesseeapple">TENNESSEE APPLE</option>
-                        </select><br>
-                    </div>
-                    <span>and I need the perfect drink for</span>
-                    <select name="material" id="material">
-                        <option value="anything">Anything</option>
-                    </select><br>
-                    <input type="button" name="recipes" id="recipesbutton" value="RECIPES" onclick=" location.href = 'sub.html#top';">
-                </div>
-                <p>◆</p>
+      <div class="content">
+        <div id="recipesbox">
+          <p>◆</p>
+          <div id="lineout">
+            <div id="reline">
+              <span>I've got a bottle of</span>
+              <select name="bottle" id="bottle">
+                <option value="any">Any</option>
+                <option value="OLDNO.7">OLD NO.7</option>
+                <optgroup label="SINGLE BARREL">
+                  <option value="select">SELECT</option>
+                  <option value="select">RYE</option>
+                  <option value="select">PROOF</option>
+                  <option value="select">100 PROOF</option>
+                  <option value="select">PROOF RYE</option>
+                </optgroup>
+                <option value="gentleman">GENTLEMAN JACK</option>
+                <option value="bonded">BONDED</option>
+                <option value="tennesseehoney">TENNESSEE HONEY</option>
+                <option value="tennesseefire">TENNESSEE FIRE</option>
+                <option value="tennesseeapple">TENNESSEE APPLE</option></select
+              ><br />
             </div>
-
-            <div id="leftbox">
-                <div id="recipesimg">
-                    <img src="img/main/raspberrylynchburgpng.png" alt="raspberrylynchburg" id="raspberry">
-                    <img src="img/main/jackhoneysmashpng.png" alt="jackhoneysmash" id="smash">
-                    <img src="img/main/jacksourpng.png" alt="jacksour" id="sour">
-                </div>
-
-                <div id="covertext">
-                    <p>
-                        LET'S TALK DRINKS <br>
-                        Whether you're looking for<br>
-                        a refreshing highball cocktail,<br>
-                        a classic cocktail, or a perfectly mixed summer cocktail,<br>
-                        we've got you covered.<br>
-                        We've been told these are<br>
-                        the best whiskey cocktails to try out at home.
-                    </p>
-                </div>
-            </div>
-
+            <span>and I need the perfect drink for</span>
+            <select name="material" id="material">
+              <option value="anything">Anything</option></select
+            ><br />
+            <input
+              type="button"
+              name="recipes"
+              id="recipesbutton"
+              value="RECIPES"
+              onclick=" location.href = 'sub.html#top';"
+            />
+          </div>
+          <p>◆</p>
         </div>
 
-    </div>
+        <div id="leftbox">
+          <div id="recipesimg">
+            <img
+              src="img/main/raspberrylynchburgpng.png"
+              alt="raspberrylynchburg"
+              id="raspberry"
+            />
+            <img
+              src="img/main/jackhoneysmashpng.png"
+              alt="jackhoneysmash"
+              id="smash"
+            />
+            <img src="img/main/jacksourpng.png" alt="jacksour" id="sour" />
+          </div>
 
+          <div id="covertext">
+            <p>
+              LET'S TALK DRINKS <br />
+              Whether you're looking for<br />
+              a refreshing highball cocktail,<br />
+              a classic cocktail, or a perfectly mixed summer cocktail,<br />
+              we've got you covered.<br />
+              We've been told these are<br />
+              the best whiskey cocktails to try out at home.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div id="story">
-        <div id="t1">
-            <p>◇</p>
-            <p>◇</p>
-            <p>SINCE&nbsp;&nbsp;1866~</p>
-            <p>◇</p>
-            <p>◇</p>
-        </div>
+      <div id="t1">
+        <p>◇</p>
+        <p>◇</p>
+        <p>SINCE&nbsp;&nbsp;1866~</p>
+        <p>◇</p>
+        <p>◇</p>
+      </div>
 
-        <div id="t2">
-            <p>BORN TO MAKE WHISKEY</p>
-            <p>THE STORY OF JACK DANIEL</p>
-        </div>
+      <div id="t2">
+        <p>BORN TO MAKE WHISKEY</p>
+        <p>THE STORY OF JACK DANIEL</p>
+      </div>
 
-        <div id="t3">
-            Crafting something that endures for over <br>
-            150 years takes time and character. <br>
-            You'll find plenty of both <br>
-            in the people and history
+      <div id="t3">
+        Crafting something that endures for over <br />
+        150 years takes time and character. <br />
+        You'll find plenty of both <br />
+        in the people and history
 
-            <input type="button" name="story" id="ourstory" value="OUR STORY">
-        </div>
+        <input type="button" name="story" id="ourstory" value="OUR STORY" />
+      </div>
 
-        <img src="img/main/highangelspng.png" alt="angels" id="angels">
-        <img src="img/main/70thpng.png" alt="70th" id="th">
-        <img src="img/main/12yearoldpng.png" alt="12old" id="old">
-        <img src="img/main/maxwellhousepng.png" alt="maxwell" id="maxwell">
+      <img src="img/main/highangelspng.png" alt="angels" id="angels" />
+      <img src="img/main/70thpng.png" alt="70th" id="th" />
+      <img src="img/main/12yearoldpng.png" alt="12old" id="old" />
+      <img src="img/main/maxwellhousepng.png" alt="maxwell" id="maxwell" />
     </div>
-
 
     <div id="storyline"></div>
 
     <div id="process">
-        <img src="img/main/sunset2.png" alt="sunset" id="sunset">
-        <img src="img/main/tennesseeryebanner3.jpg" alt="ryeban" id="ryeban">
+      <img src="img/main/sunset2.png" alt="sunset" id="sunset" />
+      <img src="img/main/tennesseeryebanner3.jpg" alt="ryeban" id="ryeban" />
 
-        <div class="content">
-            <div id="processtext">
-                <p>EVERY DAY</p>
-                <p>&nbsp;WE MAKE IT,</p>
-                <p>WE'LL MAKE IT</p>
-                <p>THE BEST WE CAN</p>
-            </div>
-
-            <input type="button" value="OUR PROCESS" name="process" id="ourprocess">
+      <div class="content">
+        <div id="processtext">
+          <p>EVERY DAY</p>
+          <p>&nbsp;WE MAKE IT,</p>
+          <p>WE'LL MAKE IT</p>
+          <p>THE BEST WE CAN</p>
         </div>
 
-
+        <input
+          type="button"
+          value="OUR PROCESS"
+          name="process"
+          id="ourprocess"
+        />
+      </div>
     </div>
 
     <div id="banner">
-        <div class="content">
-
-            <div id="bannertext">
-                <p>Jack Daniel's</p>
-                <p>Tennessee Whiskey</p>
-            </div>
-
-            <img src="img/main/collectionpng.png" alt="collectionpng" id="collectionpng">
+      <div class="content">
+        <div id="bannertext">
+          <p>Jack Daniel's</p>
+          <p>Tennessee Whiskey</p>
         </div>
+
+        <img
+          src="img/main/collectionpng.png"
+          alt="collectionpng"
+          id="collectionpng"
+        />
+      </div>
     </div>
 
-
     <footer>
-        <div class="content">
-            <div id="free">
-                <p>LIVE FREELY. DRINK RESPONSIBLE</p>
-            </div>
-            <div id="linetext">
-                <p>CONTACT US</p>
-                <p>FAQS</p>
-                <p>PRIVACY POLICY</p>
-                <p>PRESSROOM</p>
-                <p>NUTRITION</p>
-            </div>
-            <div id="explain">
-                <P>
-                    JACK DANIEL DISTILLERY, LYNCHBURG, TENNESSEE <br>
-                    JACK, JACK DANIEL'S, OLD NO. 7, GENTLEMAN JACK,
-                    and JD are trademarks of Jack Daniel's Properties,
-                    Inc. © 2023 Jack Daniel's Properties, Inc. <br>
-                    Distilled and Bottled by Jack Daniel Distillery, Lynchburg, Tennessee.
-                    ©2023 Jack Daniel's. All rights reserved. <br>
-                    All other trademarks and trade names are properties of their respective owners. <br>
-                    TO FIND OUT MORE ABOUT RESPONSIBLE CONSUMPTION, VISIT DRINKWISE.ORG.AU
-                    AND OURTHINKINGABOUTDRINKING.COM <br>
-                    Please do not share or forward with anyone under the legal drinking age.
-                </P>
-            </div>
+      <div class="content">
+        <div id="free">
+          <p>LIVE FREELY. DRINK RESPONSIBLE</p>
         </div>
-
+        <div id="linetext">
+          <p>CONTACT US</p>
+          <p>FAQS</p>
+          <p>PRIVACY POLICY</p>
+          <p>PRESSROOM</p>
+          <p>NUTRITION</p>
+        </div>
+        <div id="explain">
+          <p>
+            JACK DANIEL DISTILLERY, LYNCHBURG, TENNESSEE <br />
+            JACK, JACK DANIEL'S, OLD NO. 7, GENTLEMAN JACK, and JD are
+            trademarks of Jack Daniel's Properties, Inc. © 2023 Jack Daniel's
+            Properties, Inc. <br />
+            Distilled and Bottled by Jack Daniel Distillery, Lynchburg,
+            Tennessee. ©2023 Jack Daniel's. All rights reserved. <br />
+            All other trademarks and trade names are properties of their
+            respective owners. <br />
+            TO FIND OUT MORE ABOUT RESPONSIBLE CONSUMPTION, VISIT
+            DRINKWISE.ORG.AU AND OURTHINKINGABOUTDRINKING.COM <br />
+            Please do not share or forward with anyone under the legal drinking
+            age.
+          </p>
+        </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

@@ -1,277 +1,339 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JACK DANIEL'S</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css/common.css">
-    <script src="https://kit.fontawesome.com/0ddafc5ecc.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <script
+      src="https://kit.fontawesome.com/0ddafc5ecc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caladea:ital,wght@1,700&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caladea:ital,wght@1,700&family=Calistoga&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&family=Playfair+Display:wght@600&family=Ysabeau+SC&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&family=Playfair+Display:wght@600&family=Yeseva+One&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Pattaya&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Playfair+Display&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Playfair+Display:wght@800&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Yatra+One&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Yatra+One&display=swap"
-        rel="stylesheet">
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Merriweather:wght@700&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Noto+Serif+KR&family=Oswald&family=Special+Elite&family=Yatra+One&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caladea:ital,wght@1,700&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caladea:ital,wght@1,700&family=Calistoga&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=PT+Serif&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&family=Playfair+Display:wght@600&family=Ysabeau+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&family=Playfair+Display:wght@600&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Playfair+Display:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Oswald&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Anton&family=Bacasime+Antique&family=Bebas+Neue&family=Belanosima:wght@600&family=Black+Ops+One&family=Bree+Serif&family=Caladea:ital,wght@1,700&family=Calistoga&family=Caprasimo&family=Concert+One&family=Cormorant:wght@600&family=Crimson+Text:wght@600&family=DM+Serif+Display:ital@1&family=Dancing+Script:wght@500&family=Diphylleia&family=Domine:wght@400;500;600;700&family=Dosis:wght@300;600;700;800&family=Fjalla+One&family=Frank+Ruhl+Libre:wght@300;400&family=IBM+Plex+Sans+KR:wght@300&family=Lexend+Peta:wght@200&family=Libre+Baskerville:wght@700&family=Lobster&family=Lora:ital,wght@0,600;1,400;1,600&family=Merriweather:wght@700&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+JP:wght@700&family=Noto+Serif+KR&family=Oswald&family=Special+Elite&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
-        $(function () {
-            $("#click p").click(function () {                
-                $(this).next("ul").slideToggle();
-            });
-   
-            $("aside img").click(function () {
-                $("#click").slideToggle();
-            });
+      $(function () {
+        $("#click p").click(function () {
+          $(this).next("ul").slideToggle();
         });
-    </script>
 
-</head>
-<body>
+        $("aside img").click(function () {
+          $("#click").slideToggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
     <header>
-        <div class="content" id="top">
-            <nav>
-                <ul>
-                    <li><a href="product.html">Our&nbsp;Product&nbsp;&nbsp;<i class="fa-solid fa-sort-down"></i></a></li>
-    
-                    <li><a href="sub.html#top">Recipes&nbsp;&nbsp;<i class="fa-solid fa-sort-down"></i></a></li>
-                </ul>
-            </nav>
-    
-            <nav id="iconimg">
-                <a href="#"><img src="img/main/login2.png" alt="login" id="login"></a>
-                <a href="#"><img src="img/main/icon.png" alt="icon" id="icon"></a>
-            </nav>
-    
-            <div id="logo">
-                <a href="index.html"><img src="img/main/logo_black_textpng.png" alt="logo"></a>
-            </div>
-    
-    
+      <div class="content" id="top">
+        <nav>
+          <ul>
+            <li>
+              <a href="product.html"
+                >Our&nbsp;Product&nbsp;&nbsp;<i
+                  class="fa-solid fa-sort-down"
+                ></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="sub.html#top"
+                >Recipes&nbsp;&nbsp;<i class="fa-solid fa-sort-down"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav id="iconimg">
+          <a href="#"
+            ><img src="img/main/login2.png" alt="login" id="login"
+          /></a>
+          <a href="#"><img src="img/main/icon.png" alt="icon" id="icon" /></a>
+        </nav>
+
+        <div id="logo">
+          <a href="index.html"
+            ><img src="img/main/logo_black_textpng.png" alt="logo"
+          /></a>
         </div>
+      </div>
     </header>
 
-
-
-
     <div id="wrap">
+      <div class="contentbox">
+        <aside>
+          <img src="img/sub/menu.png" alt="menu" />
 
-        <div class="contentbox">
+          <div id="click">
+            <p>OUR PRODUCT<span>+</span></p>
+            <ul>
+              <li><a href="sub.html#top">OLD NO.7</a></li>
+              <li><a href="sub.html#top">GENTLEMAN JACK</a></li>
+              <li><a href="sub.html#top">HONEY</a></li>
+              <li><a href="sub.html#top">APPLE</a></li>
+              <li><a href="sub.html#top">SINGLE BARREL SELECT</a></li>
+              <li><a href="sub.html#top">SINGLE BARREL RYE</a></li>
+              <li><a href="sub.html#top">SINGLE BARREL PROOF</a></li>
+              <li><a href="sub.html#top">SINGLE BARREL 100 PROOF</a></li>
+              <li><a href="sub.html#top">SINGLE BARREL PRROF RYE</a></li>
+            </ul>
 
-            <aside>
-                <img src="img/sub/menu.png" alt="menu">
-                
-                <div id="click">
-                    <p>OUR PRODUCT<span>+</span></p>
-                    <ul>
-                        <li><a href="sub.html#top">OLD NO.7</a></li>
-                        <li><a href="sub.html#top">GENTLEMAN JACK</a></li>
-                        <li><a href="sub.html#top">HONEY</a></li>
-                        <li><a href="sub.html#top">APPLE</a></li>
-                        <li><a href="sub.html#top">SINGLE BARREL SELECT</a></li>
-                        <li><a href="sub.html#top">SINGLE BARREL RYE</a></li>
-                        <li><a href="sub.html#top">SINGLE BARREL PROOF</a></li>
-                        <li><a href="sub.html#top">SINGLE BARREL 100 PROOF</a></li>
-                        <li><a href="sub.html#top">SINGLE BARREL PRROF RYE</a></li>
-                    </ul>
+            <p class="recipe">RECIPES<span>+</span></p>
+            <ul>
+              <li><a href="sub.html#top">OLD NO.7</a></li>
+              <li><a href="sub.html#top">GENTLEMAN JACK</a></li>
+              <li><a href="sub.html#top">HONEY</a></li>
+              <li><a href="sub.html#top">APPLE</a></li>
+              <li><a href="sub.html#top">SINGLE BARREL SELECT</a></li>
+              <li><a href="sub.html#top">SINGLE BARREL RYE</a></li>
+              <li><a href="sub.html#top">SINGLE BARREL PROOF</a></li>
+              <li><a href="sub.html#top">SINGLE BARREL 100 PROOF</a></li>
+              <li><a href="sub.html#top">SINGLE BARREL PRROF RYE</a></li>
+            </ul>
 
-                    <p class="recipe">RECIPES<span>+</span></p>
-                    <ul>
-                        <li><a href="sub.html#top">OLD NO.7</a></li>
-                        <li><a href="sub.html#top">GENTLEMAN JACK</a></li>
-                        <li><a href="sub.html#top">HONEY</a></li>
-                        <li><a href="sub.html#top">APPLE</a></li>
-                        <li><a href="sub.html#top">SINGLE BARREL SELECT</a></li>
-                        <li><a href="sub.html#top">SINGLE BARREL RYE</a></li>
-                        <li><a href="sub.html#top">SINGLE BARREL PROOF</a></li>
-                        <li><a href="sub.html#top">SINGLE BARREL 100 PROOF</a></li>
-                        <li><a href="sub.html#top">SINGLE BARREL PRROF RYE</a></li>
-                    </ul>
+            <p class="story">OUR STORY<span>+</span></p>
+            <ul>
+              <li>창립 과정</li>
+              <li>창립 이후</li>
+              <li>현재</li>
+            </ul>
 
-                    <p class="story">OUR STORY<span>+</span></p>
-                    <ul>
-                        <li>창립 과정</li>
-                        <li>창립 이후</li>
-                        <li>현재</li>
-                    </ul>
+            <p class="process">OUR PROCESS<span>+</span></p>
+            <ul>
+              <li>재료</li>
+              <li>제조 과정</li>
+              <li>제조 공장</li>
+            </ul>
+          </div>
+        </aside>
 
-                    <p class="process">OUR PROCESS<span>+</span></p>
-                    <ul>
-                        <li>재료</li>
-                        <li>제조 과정</li>
-                        <li>제조 공장</li>
-                    </ul>
+        <div id="box">
+          <a href="sub.html#top" class="product">
+            <h3>OLD NO.7</h3>
+            <img src="img/sub/oldno.7.png" alt="oldnosev" />
+            <h5>
+              51,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
 
-                </div>
-            </aside>
+          <a href="sub.html#top" class="product">
+            <h3>GENTLEMAN JACK</h3>
+            <img
+              src="img/sub/gentlemanjack.png"
+              alt="gentlemanjack"
+              id="gentle"
+            />
+            <h5>
+              82,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
 
-            <div id="box">
-                <div class="product">
-                    <h3>OLD NO.7</h3>
-                    <a href="sub.html#top"><img src="img/sub/oldno.7.png" alt="oldnosev"></a>
-                    <h5>51,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
+          <a href="sub.html#top" class="product">
+            <h3>TENNESSEE HONEY</h3>
+            <img src="img/sub/honey.png" alt="honey" id="honey" />
+            <h5>
+              51,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
 
-                <div class="product">
-                    <h3>GENTLEMAN JACK</h3>
-                    <a href="sub.html#top"><img src="img/sub/gentlemanjack.png" alt="gentlemanjack" id="gentle"></a>
-                    <h5>82,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
+          <a href="sub.html#top" class="product">
+            <h3>TENNESSEE APPLE</h3>
+            <img src="img/sub/apple.png" alt="apple" id="apple" />
+            <h5>
+              51,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
 
-                <div class="product">
-                    <h3>TENNESSEE HONEY</h3>
-                    <a href="sub.html#top"><img src="img/sub/honey.png" alt="honey" id="honey"></a>
-                    <h5>51,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
+          <a href="sub.html#top" class="product single">
+            <h3>SINGLE BARREL</h3>
+            <img src="img/sub/singlebarrel.png" alt="select" id="select" />
+            <h4>SELECT</h4>
+            <h5>
+              140,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
 
-                <div class="product">
-                    <h3>TENNESSEE APPLE</h3>
-                    <a href="sub.html#top"><img src="img/sub/apple.png" alt="apple" id="apple"></a>
-                    <h5>51,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
+          <a href="sub.html#top" class="product single">
+            <h3>SINGLE BARREL</h3>
+            <img src="img/sub/selectrye.png" alt="rye" id="rye" />
+            <h4>RYE</h4>
+            <h5>
+              140,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
 
-                <div class="product single">
-                    <h3>SINGLE BARREL</h3>
-                    <a href="sub.html#top"><img src="img/sub/singlebarrel.png" alt="select" id="select"></a>
-                    <h4>SELECT</h4>
-                    <h5>140,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
+          <a href="sub.html#top" class="product single">
+            <h3>SINGLE BARREL</h3>
+            <img src="img/sub/proof.png" alt="proof" id="proof" />
+            <h4>PROOF</h4>
+            <h5>
+              140,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
 
-                <div class="product single">
-                    <h3>SINGLE BARREL</h3>
-                    <a href="sub.html#top"><img src="img/sub/selectrye.png" alt="rye" id="rye"></a>
-                    <h4>RYE</h4>
-                    <h5>140,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
+          <a href="sub.html#top" class="product single">
+            <h3>SINGLE BARREL</h3>
+            <img src="img/sub/100proof.png" alt="hundred" id="hundred" />
+            <h4>100 PROOF</h4>
+            <h5>
+              140,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
 
-                <div class="product single">
-                    <h3>SINGLE BARREL</h3>
-                    <a href="sub.html#top"><img src="img/sub/proof.png" alt="proof" id="proof"></a>
-                    <h4>PROOF</h4>
-                    <h5>140,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
+          <a href="sub.html#top" class="product single">
+            <h3>SINGLE BARREL</h3>
+            <img src="img/sub/proofrye.png" alt="proofrye" id="proofrye" />
+            <h4>PROOF RYE</h4>
+            <h5>
+              140,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
 
-                <div class="product single">
-                    <h3>SINGLE BARREL</h3>
-                    <a href="sub.html#top"><img src="img/sub/100proof.png" alt="hundred" id="hundred"></a>
-                    <h4>100 PROOF</h4>
-                    <h5>140,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
+          <a href="sub.html#top" class="product">
+            <h3>TENNESSEE RYE</h3>
+            <img
+              src="img/sub/tennesseerye.png"
+              alt="tennesseerye"
+              id="tennesseerye"
+            />
+            <h5>
+              51,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
 
-                <div class="product single">
-                    <h3>SINGLE BARREL</h3>
-                    <a href="sub.html#top"><img src="img/sub/proofrye.png" alt="proofrye" id="proofrye"></a>
-                    <h4>PROOF RYE</h4>
-                    <h5>140,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
-                
-                <div class="product">
-                    <h3>TENNESSEE RYE</h3>
-                    <a href="sub.html#top"><img src="img/sub/tennesseerye.png" alt="tennesseerye" id="tennesseerye"></a>
-                    <h5>51,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
+          <a href="sub.html#top" class="product">
+            <h3>TENNESSEE FIRE</h3>
+            <img src="img/sub/fire.png" alt="fire" id="fire" />
+            <h5>
+              51,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
 
-                <div class="product">
-                    <h3>TENNESSEE FIRE</h3>
-                    <a href="sub.html#top"><img src="img/sub/fire.png" alt="fire" id="fire"></a>
-                    <h5>51,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
-
-                <div class="product">
-                    <h3>BONDED</h3>
-                    <a href="sub.html#top"><img src="img/sub/bottleinbond.png" alt="bonded" id="bonded"></a>
-                    <h5>51,000w<small>( 700ml )</small> <a href="sub.html#top"><span>+</span></a></h5>
-                </div>
-
-            </div>
-
+          <a href="sub.html#top" class="product">
+            <h3>BONDED</h3>
+            <img src="img/sub/bottleinbond.png" alt="bonded" id="bonded" />
+            <h5>
+              51,000w<small>( 700ml )</small>
+              <span>+</span>
+            </h5>
+          </a>
         </div>
-
+      </div>
     </div>
 
-
-
-
     <footer>
-        <div class="content">
-            <div id="free">
-                <p>LIVE FREELY. DRINK RESPONSIBLE</p>
-            </div>
-            <div id="linetext">
-                <p>CONTACT US</p>
-                <p>FAQS</p>
-                <p>PRIVACY POLICY</p>
-                <p>PRESSROOM</p>
-                <p>NUTRITION</p>
-            </div>
-            <div id="explain">
-                <P>
-                    JACK DANIEL DISTILLERY, LYNCHBURG, TENNESSEE <br>
-                    JACK, JACK DANIEL'S, OLD NO. 7, GENTLEMAN JACK,
-                    and JD are trademarks of Jack Daniel's Properties,
-                    Inc. © 2023 Jack Daniel's Properties, Inc. <br>
-                    Distilled and Bottled by Jack Daniel Distillery, Lynchburg, Tennessee.
-                    ©2023 Jack Daniel's. All rights reserved. <br>
-                    All other trademarks and trade names are properties of their respective owners. <br>
-                    TO FIND OUT MORE ABOUT RESPONSIBLE CONSUMPTION, VISIT DRINKWISE.ORG.AU
-                    AND OURTHINKINGABOUTDRINKING.COM <br>
-                    Please do not share or forward with anyone under the legal drinking age.
-                </P>
-            </div>
+      <div class="content">
+        <div id="free">
+          <p>LIVE FREELY. DRINK RESPONSIBLE</p>
         </div>
+        <div id="linetext">
+          <p>CONTACT US</p>
+          <p>FAQS</p>
+          <p>PRIVACY POLICY</p>
+          <p>PRESSROOM</p>
+          <p>NUTRITION</p>
+        </div>
+        <div id="explain">
+          <p>
+            JACK DANIEL DISTILLERY, LYNCHBURG, TENNESSEE <br />
+            JACK, JACK DANIEL'S, OLD NO. 7, GENTLEMAN JACK, and JD are
+            trademarks of Jack Daniel's Properties, Inc. © 2023 Jack Daniel's
+            Properties, Inc. <br />
+            Distilled and Bottled by Jack Daniel Distillery, Lynchburg,
+            Tennessee. ©2023 Jack Daniel's. All rights reserved. <br />
+            All other trademarks and trade names are properties of their
+            respective owners. <br />
+            TO FIND OUT MORE ABOUT RESPONSIBLE CONSUMPTION, VISIT
+            DRINKWISE.ORG.AU AND OURTHINKINGABOUTDRINKING.COM <br />
+            Please do not share or forward with anyone under the legal drinking
+            age.
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
