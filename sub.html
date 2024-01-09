@@ -155,25 +155,6 @@
           </div>
         </div>
 
-        <script>
-          let count = 0;
-          let chCount = document.getElementsByClassName("chCount")[0];
-          let minus = document.getElementsByClassName("count")[0];
-          let plus = document.getElementsByClassName("count")[1];
-
-          minus.addEventListener("click", () => {
-            if (count < 1) {
-              count = 1;
-            }
-
-            chCount.innerHTML = --count;
-          });
-
-          plus.addEventListener("click", () => {
-            chCount.innerHTML = ++count;
-          });
-        </script>
-
         <div id="subex">
           <div id="subextext">
             <h1>
@@ -431,5 +412,24 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      let count = 0;
+      let chCount = document.getElementsByClassName("chCount")[0];
+      let minus = document.getElementsByClassName("count")[0];
+      let plus = document.getElementsByClassName("count")[1];
+
+      minus.addEventListener("click", () => {
+        if (count < 1) {
+          count = 1;
+        }
+
+        chCount.innerHTML = --count;
+      });
+
+      plus.addEventListener("click", () => {
+        chCount.innerHTML = ++count;
+      });
+    </script>
   </body>
 </html>

@@ -84,17 +84,6 @@
     />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $("#click p").click(function () {
-          $(this).next("ul").slideToggle();
-        });
-
-        $("aside img").click(function () {
-          $("#click").slideToggle();
-        });
-      });
-    </script>
   </head>
   <body>
     <header>
@@ -335,5 +324,15 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      $("#click p").click(function () {
+        $(this).next("ul").slideToggle();
+      });
+
+      $("aside img").click(function () {
+        $("#click").slideToggle();
+      });
+    </script>
   </body>
 </html>
